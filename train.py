@@ -63,7 +63,7 @@ def train(log_dir, input_path, checkpoint_path, is_restore):
 
             if is_restore:
                 # Restore from a checkpoint if the user requested it.
-                restore_path = '%s/pre-train/model.ckpt' % (checkpoint_path)
+                restore_path = '%s' % (checkpoint_path)
                 saver.restore(sess, restore_path)
                 log('Resuming from checkpoint')
             else:
@@ -88,7 +88,7 @@ def train(log_dir, input_path, checkpoint_path, is_restore):
                     summary_writer.add_summary(sess.run(stats), step)
 
                 if step % hparams.checkpoint_interval == 0:
-                    log('Saving checkpoint to: %s/model-%d' % (checkpoint_path, step))
+                    log('Saving checkpoint to: %s-%d' % (checkpoint_path, step))
                     saver.save(sess, checkpoint_path, global_step=step)
                     log('Saving audio and alignment...')
                     input_seq, spectrogram, alignment = sess.run([
@@ -105,7 +105,7 @@ def train(log_dir, input_path, checkpoint_path, is_restore):
 
 def main():
     log_dir = './logs'
-    checkpoint_path = './checkpoint'
+    checkpoint_path = './checkpoint/model.ckpt'
     input_path = 'training/train.txt'
     is_restore = True
     train(log_dir, input_path, checkpoint_path, is_restore)
