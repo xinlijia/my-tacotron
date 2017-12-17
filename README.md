@@ -24,6 +24,7 @@ Train a model
 Generate .wav file using the model and random texts from speeches
 Generate a file to store the input sentences
 
+1. Create `./test` folder
 1. Edit the checkpoint path and output path if needed. (default `./checkpoint/model.ckpt-894000` and `./test`)
 2. Run `python3 eval.py`
 
