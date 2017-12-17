@@ -107,7 +107,7 @@ def main():
     log_dir = './logs'
     checkpoint_path = './checkpoint/model.ckpt'
     input_path = 'training/train.txt'
-    is_restore = True
+    is_restore = False
     train(log_dir, input_path, checkpoint_path, is_restore)
 
 

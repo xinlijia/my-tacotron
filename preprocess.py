@@ -77,8 +77,8 @@ def preprocess(in_path, out_path):
 
 
 def main():
-    in_path = '../tacotron-master/LJSpeech-1.0'
-    out_path = './data'
+    in_path = '../my-tacotron/LJSpeech-1.0'
+    out_path = './training'
     preprocess(in_path, out_path)
 
 if __name__ == '__main__':

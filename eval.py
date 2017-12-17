@@ -15,10 +15,10 @@ def eval_text(texts, checkpoint, out_path):
           f.write(synth.synthesize(text))
 
 def main():
-    checkpoint = './checkpoint/pre-train/model.ckpt'
+    checkpoint = './checkpoint/model.ckpt-894000'
     out_path = './test'
     texts = []
-    with open('./test/speech_texts') as f:
+    with open('./speech_texts') as f:
         for line in f:
             tokens = line.split(' ')
             #tokens = [re.sub(r'[^a-zA-Z0-9,\'.]+', ' ',token) for token in tokens]
