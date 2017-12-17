@@ -25,7 +25,7 @@ def main():
             sentence = ' '.join(tokens)
             if len(tokens) >= 5 and len(tokens) <= 20:
                 texts.append(sentence)
-    test_texts = np.random.choice(texts, size=100, replace=False)
+    test_texts = np.random.choice(texts, size=10, replace=False)
     with open('./test/test_texts', 'w+') as f:
         for text in test_texts:
             f.write(text)

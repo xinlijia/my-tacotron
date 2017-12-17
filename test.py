@@ -8,7 +8,7 @@ def rating(true_result, predict_result):
     for i,s in enumerate(difflib.ndiff(true_result, predict_result)):
         if s[0] != ' ':
             dif += 1
-    print float(dif)/len(true_result)
+    #print float(dif)/len(true_result)
     return float(dif)/len(true_result)
 
 def main():
@@ -40,7 +40,7 @@ def main():
     sum_accuracy = 0
     for i in xrange(len(results)):
          sum_accuracy += rating(texts[i], results[i])
-    print 1 - sum_accuracy/len(results)
+    print 'average accuracy', 1 - sum_accuracy/len(results)
 
 if __name__ == '__main__':
     main()
