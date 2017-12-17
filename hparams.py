@@ -26,7 +26,7 @@ hparams = tf.contrib.training.HParams(
     initial_learning_rate=0.002,
     decay_learning_rate=True,
     summary_interval=500,
-    checkpoint_interval=1,
+    checkpoint_interval=1000,
 
     # Eval:
     max_iters=200,
