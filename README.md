@@ -15,7 +15,7 @@ Preprocess the raw data for easy pipeline in training
 Train a model
 
 1. Edit the preprocessed data path in `train.py`.(default `./training`)
-2. If you want load pre train model, edit its path and change `is_restore` to be True
+2. If you want load pre train model, edit the checkpoint path and change `is_restore` to be True
 3. Edit the parameters in `hparams.py` if needed
 4. Run `python3 train.py`
 
