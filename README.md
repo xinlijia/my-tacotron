@@ -3,6 +3,13 @@
 ## Download Dataset
 
 [LJ Speech Dataset](https://drive.google.com/a/columbia.edu/file/d/1kv4ij1sj2hP4AFc5vP88ZW6Quj7u4duq/view?usp=sharing)
+Unzip the file and put into the main directory
+
+
+## One Command Run
+
+`python3 main.py`
+
 
 ## Data preprocessing
 Preprocess the raw data for easy pipeline in training

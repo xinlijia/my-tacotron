@@ -10,7 +10,7 @@ test/
 training/
 logs/
 checkpoint/
-
+LJSpeech-1.0/
 # Distribution / packaging
 .Python
 build/
